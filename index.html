@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자 맞추기 v2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./src/ticket_favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</svg>
+</head>
+<body>
+  <!-- 티켓 -->
+  <div class="chance-box">
+    <div class="box">
+      <img src="./src/airplane_ticket.png" alt="airplane_ticket">
+    </div>
+    <div class="box">
+      <img src="./src/airplane_ticket.png" alt="airplane_ticket">
+    </div>
+    <div class="box">
+      <img src="./src/airplane_ticket.png" alt="airplane_ticket">
+    </div>
+  </div>
+  <!-- 메인 -->
+  <div class="content">
+    <h1>숫자 맞추기 게임</h1>
+    <h4>숫자 맞추고 여행가자!!</h4>
+    <div id="result-img-box">
+      <img src="./src/start_game.png" class="result-img" alt="result-img">
+    </div>
+    <div id="ticket">남은 티켓 : 3장</div>
+    <div id="history"></div>
+    <div class="btn-box">
+      <i class="fa-solid fa-rotate-right" id="reset-btn"></i>
+      <input type="number" id="user-input">
+      <i class="fa-solid fa-circle-check" id="submit-btn"></i>
+    </div>
+    <div id="result-area">복권 제출 해서 결과를 확인하세요</div>
+    <!-- 정답 -->
+    <div id="answer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
